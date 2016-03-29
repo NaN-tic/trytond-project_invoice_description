@@ -4,10 +4,10 @@
 from trytond.pool import PoolMeta
 
 __all__ = ['Work']
-__metaclass__ = PoolMeta
 
 
 class Work:
+    __metaclass__ = PoolMeta
     __name__ = 'project.work'
 
     def _get_invoice_line(self, key, invoice, lines):
